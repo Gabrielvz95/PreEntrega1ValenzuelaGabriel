@@ -30,7 +30,7 @@ if (ocupacion === 1) { // Asignador de porcentaje dependiendo de la opcion ingre
   } else if (ocupacion === 2) {
     porcentajeOcupacion = 60;
   } else {
-    porcentajeOcupacion = 90;
+    porcentajeOcupacion = 90;   
   }
 
 while(true){
