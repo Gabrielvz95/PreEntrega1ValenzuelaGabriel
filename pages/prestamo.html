@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <title>Solicitud Prestamo</title>
+</head>
+<body>
+    <header class="header_principal">
+        <h1 class="contenedor_nombre_principal">
+            Bank Online
+        </h1>
+    </header>
+    <nav class="barra_navegacon_principal">
+        <ul><li><a href="/index.html">Inicio</a></li></ul>
+        <ul><li><a href="">contacto</a></li></ul>
+        <ul><li><a href="">Tasa fija</a></li></ul>
+        <ul><li><a href="/index.html">Quienes Somos</a></li></ul>
+    </nav>
+
+    <main class="main_prestamo">
+        <h2>
+            Solicitud de prestamo
+        </h2>
+        <section class="contenedor_form_prestamo">
+
+            <form id="form_prestamo">
+                <select name="ganaciasNetas" id="nacionalidadNuevoUsuario" p>
+                    <option disabled selected>¿Cuál es su ingreso mensual o salario neto?</option>
+                    <option value="Bolivia">Menos de $40.0000</option>
+                    <option value="Bolivia">Entre $40.000 y $60.000</option>
+                    <option value="Bolivia">Entre $60.000 y 80.000</option>
+                    <option value="Bolivia">Mas de $100.000</option>
+                </select>
+    
+                <select name="ganaciasNetas" id="nacionalidadNuevoUsuario" p>
+                    <option disabled selected>¿Tiene algún otro ingreso adicional?</option>
+                    <option value="Bolivia">Si</option>
+                    <option value="Bolivia">No</option>
+                </select>
+    
+                <select name="ganaciasNetas" id="nacionalidadNuevoUsuario" p>
+                    <option disabled selected>¿Tiene deudas existentes?</option>
+                    <option value="Bolivia">Si</option>
+                    <option value="Bolivia">No</option>
+                </select>
+                <input type="number" placeholder="Si tiene deudas, ¿cuál es el monto total de sus deudas actuales?" >
+    
+                <select name="ganaciasNetas" id="nacionalidadNuevoUsuario" p>
+                    <option disabled selected>¿Cuál es el propósito del préstamo?</option>
+                    <option value="Bolivia">Compra de vivienda</option>
+                    <option value="Bolivia">Educación</option>
+                    <option value="Bolivia">Consolidación de deudas</option>
+                    <option value="Bolivia">Gastos médicos</option>
+                    <option value="Bolivia">Otros</option>
+                </select>
+    
+                <select name="ganaciasNetas" id="nacionalidadNuevoUsuario" p>
+                    <option disabled selected>¿En cuántos meses planea pagar el préstamo?</option>
+                    <option value="Bolivia">12 Meses</option>
+                    <option value="Bolivia">24 Meses</option>
+                    <option value="Bolivia">36 meses</option>
+                    <option value="Bolivia">48 Meses</option>
+                    <option value="Bolivia">Más de 48 meses</option>
+                </select>
+    
+                <select name="ganaciasNetas" id="nacionalidadNuevoUsuario" p>
+                    <option disabled selected>¿Tiene un historial crediticio establecido?</option>
+                    <option value="Bolivia">Exelente</option>
+                    <option value="Bolivia">Bueno</option>
+                    <option value="Bolivia">Regular</option>
+                    <option value="Bolivia">Malo</option>
+                    <option value="Bolivia">No tengo historial crediticio</option>
+                </select>
+                <button id="boton-enviar" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

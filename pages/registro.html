@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <title>Registrarse - Bank Online</title>
+</head>
+<body>
+    <header class="header_principal">
+        <h1 class="contenedor_nombre_principal">
+            Bank Online
+        </h1>
+    </header>
+    <nav class="barra_navegacion_principal">
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="">Contacto</a></li>
+            <li><a href="">Tasa fija</a></li>
+            <li><a href="/index.html">Quiénes Somos</a></li>
+        </ul>
+    </nav>
+    <main class="main_registro">
+        <section class="contenedor_formulario_registro">
+            <h2 class="titulo_formulario_registro">
+                Nuevo Usuario
+            </h2>
+            <form id="form_registro">
+                <label for="nuevoUsuario">Usuario</label>
+                <input id="nuevoUsuario" name="nombre" type="text">
+                
+                <label for="nuevoContraseña">Contraseña</label>
+                <input id="nuevoContraseña" name="apellido" type="password">
+
+                <label for="repetirContraseña">Repetir contraseña</label>
+                <input id="repetirContraseña" name="apellido" type="password">
+
+                <label for="mailNuevoUsuario">Mail</label>
+                <input id="mailNuevoUsuario" name="mail" type="email">
+                
+                <label for="fechaDeNacimientoNuevoUsuario">Fecha de nacimiento</label>
+                <input id="fechaDeNacimientoNuevoUsuario" type="date">
+
+                <label for="nacionalidadNuevoUsuario">Nacionalidad</label>
+                <select id="nacionalidadNuevoUsuario" name="paises">
+                    <option value="Argentina">Argentina</option>
+                    <!-- Otras opciones de países -->
+                </select>
+
+                <button id="boton_enviar" type="submit">Registrarse</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>
+            Todos los derechos reservados
+        </h3>
+    </footer>
+    <script src="/js/registro.js"></script>
+</body>
+</html>

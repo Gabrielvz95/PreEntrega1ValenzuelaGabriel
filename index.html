@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <title>Prestamo</title>
 </head>
-<body>
-    <script src="/js/app.js" ></script>
+
+<body class="body_incio">
+    <header class="header_principal">
+        <h1 class="contenedor_nombre_principal">
+            Bank Online
+        </h1>
+    </header>
+    <nav class="barra_navegacon_principal">
+        <ul><li><a href="">Inicio</a></li></ul>
+        <ul><li><a href="">contacto</a></li></ul>
+        <ul><li><a href="">Tasa fija</a></li></ul>
+        <ul><li><a href="">Quienes Somos</a></li></ul>
+    </nav>
+    <main class="main_inicio">
+        <aside class="contendor_inicio_seccion">
+            
+                <form id="form_inicio_session">
+                    <label for="">Usuario</label>
+                    <input id="usuarioIngresado" type="text">
+
+                    <label for="">Contraseña</label>
+                    <input id="passwordIngresada" type="password">
+
+                    <input type="submit" value="Ingresar">
+                    <a href="/pages/registro.html">Registrase</a>
+                </form>
+        </aside>
+    </main>
+    <script src="/js/app.js"></script>
+    <script src="/js/seccion.js"></script>
+    <script src="/js/pruebas.js"></script>
 </body>
 </html>

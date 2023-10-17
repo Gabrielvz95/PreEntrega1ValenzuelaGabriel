@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+html{
+    font-size: 16px;
+    height: 100%;
+}
+:root{
+    --color-azul-fuerte: #001C30;
+    --color-azul-celeste: #176B87;
+    --color-verde-agua: #64CCC5;
+    --color-celeste-claro: #DAFFFB;
+}
+
+
+/* PAGINA INICIO */
+
+.main_inicio {
+    background-image: url(/img/bank-incio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* background-attachment: fixed; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* ESTILOS HEADER */
+.header_principal {
+    background-color: black;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor_nombre_principal {
+    color: white;
+    padding: 1rem;
+    font-size: 5rem;
+}
+
+/* BARRA DE NAVEGACION */
+.barra_navegacon_principal {
+    background-color: var(--color-azul-fuerte); 
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.barra_navegacon_principal ul {
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none; 
+}
+
+.barra_navegacon_principal ul li {
+    display: inline-block; 
+}
+
+.barra_navegacon_principal ul li a {
+    color: white; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease; 
+}
+
+.barra_navegacon_principal ul li a:hover {
+    background-color: #555;
+}
+
+
+/* INICIO DE SECCION */
+
+.contendor_inicio_seccion{
+    width: 15rem;
+    height: 15rem;
+    padding: 1rem;
+    margin: 3rem;
+}
+
+.form_inicio_session{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.6rem;
+}
+
+.form_inicio_session label, input{
+    margin: 0.5rem;
+}
+
+
+/* Registro  */
+
+.contenedor_from_registro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo_formulario_registro{ /* Titulo de registro */ 
+    width: 30rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-celeste-claro);
+}
+
+.titulo_formulario p{
+    font-size: 1rem;
+}
+
+
+/* Estilo para el formulario de registro */
+
+.main_registro{
+    background-color: var(--color-azul-fuerte);
+}
+
+#form_registro {
+    width: 400px;; 
+    margin: 2rem auto; 
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--color-azul-celeste);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilo para las etiquetas */
+#form_registro label { 
+    color: var(--color-celeste-claro);
+    margin-bottom: 0.5rem; 
+}
+
+/* Estilo para los inputs y selects */
+#form_registro input, select    { 
+    width: 100%; 
+    padding: 0.5rem; 
+    margin-bottom: 1rem; 
+    border: 0.1rem solid var(--color-azul-fuerte); 
+    border-radius: 0.5rem; 
+    box-sizing: border-box; 
+}
+
+/* Estilo para el botón de enviar */
+#boton-enviar { 
+    width: 100%; 
+    padding: 1rem; 
+    background-color: var(--color-azul-fuerte);
+    color: white; 
+    border: none; 
+    border-radius: 0.5rem; 
+    cursor: pointer; 
+    font-size: 1.2em; 
+    font-weight: bold; 
+}
+
+/* Cambio de estilo al pasar el cursor sobre el botón */
+#boton-enviar:hover { 
+    background-color: var(--color-azul-celeste);
+}
+
+/* Footer General */
+
+footer{
+    background-color: black;
+
+}
+
+footer h3{
+    color: white;
+    text-align: center;
+    border: 0.1rem solid var(--color-azul-fuerte);
+    border-radius: 0.5rem;
+}
+
+/* INICAR SECCION */
+
+.contendor_inicio_seccion{
+    background-color: white;
+    border-radius: 2rem;
+}
+
+/* ########## SECCION SOLICITUD DE PRESTAMO ##########  */
+
+.main_prestamo{
+    background-color: var(--color-azul-fuerte);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_form_prestamo{
+    width: 60rem;
+}
+
+#form_prestamo{
+    background-color: var(--color-celeste-claro);
+    width: 50rem;
+    height: 50rem;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+/* Estilo para los inputs y selects */
+#form_prestamo input, select    { 
+    width: 100%; 
+    padding: 0.5rem; 
+    margin-bottom: 2.5rem; 
+    border: 0.1rem solid var(--color-azul-fuerte); 
+    border-radius: 0.5rem;
+    box-sizing: border-box; 
+}
+
+/* Estilo para el botón de enviar */
+#boton-enviar { 
+    width: 100%; 
+    padding: 1rem; 
+    background-color: var(--color-azul-fuerte);
+    color: white; 
+    border: none; 
+    border-radius: 0.5rem; 
+    cursor: pointer; 
+    font-size: 1.2em; 
+    font-weight: bold; 
+}
+
+/* Cambio de estilo al pasar el cursor sobre el botón */
+#boton-enviar:hover { 
+    background-color: var(--color-celeste-claro);
+}
+
+
+#form_inicio_session{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
