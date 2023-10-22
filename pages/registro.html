@@ -7,20 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
-    <title>Registrarse - Bank Online</title>
+    <title>Prestamo</title>
 </head>
 <body>
     <header class="header_principal">
-        <h1 class="contenedor_nombre_principal">
-            Bank Online
+        <h1 class="nombre_principal">
+            Eduard Bank
         </h1>
     </header>
     <nav class="barra_navegacion_principal">
         <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="">Tasa fija</a></li>
-            <li><a href="/index.html">Quiénes Somos</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="#">Tasa Fija</a></li>
+            <li><a href="#">Quienes Somos</a></li>
         </ul>
     </nav>
     <main class="main_registro">
@@ -28,29 +28,30 @@
             <h2 class="titulo_formulario_registro">
                 Nuevo Usuario
             </h2>
+            <img class="img_registro" src="/img/registro-en-linea.png" alt="">
             <form id="form_registro">
-                <label for="nuevoUsuario">Usuario</label>
-                <input id="nuevoUsuario" name="nombre" type="text">
+                <label for="usuario">Usuario</label>
+                <input id="usuario" name="nombre" type="text">
                 
-                <label for="nuevoContraseña">Contraseña</label>
-                <input id="nuevoContraseña" name="apellido" type="password">
+                <label for="contrasena">Contraseña</label>
+                <input id="contrasena" name="contrasena" type="password">
 
-                <label for="repetirContraseña">Repetir contraseña</label>
-                <input id="repetirContraseña" name="apellido" type="password">
+                <label for="repetirContrasena">Repetir Contraseña</label>
+                <input id="repetirContrasena" name="repetir-contrasena" type="password">
 
-                <label for="mailNuevoUsuario">Mail</label>
-                <input id="mailNuevoUsuario" name="mail" type="email">
+                <label for="emailUsuario">Correo Electrónico</label>
+                <input id="emailUsuario" name="email" type="email">
                 
-                <label for="fechaDeNacimientoNuevoUsuario">Fecha de nacimiento</label>
-                <input id="fechaDeNacimientoNuevoUsuario" type="date">
+                <label for="fechaNacimientoUsuario">Fecha de Nacimiento</label>
+                <input id="fechaNacimientoUsuario" type="date">
 
-                <label for="nacionalidadNuevoUsuario">Nacionalidad</label>
-                <select id="nacionalidadNuevoUsuario" name="paises">
+                <label for="nacionalidadUsuario">Nacionalidad</label>
+                <select id="nacionalidadUsuario" name="nacionalidad">
                     <option value="Argentina">Argentina</option>
                     <!-- Otras opciones de países -->
                 </select>
 
-                <button id="boton_enviar" type="submit">Registrarse</button>
+                <button id="boton-registrar" type="submit">Registrarse</button>
             </form>
         </section>
     </main>

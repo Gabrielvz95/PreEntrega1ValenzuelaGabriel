@@ -18,7 +18,6 @@ html{
 
 
 /* PAGINA INICIO */
-
 .main_inicio {
     background-image: url(/img/bank-incio.jpg);
     background-size: cover;
@@ -45,42 +44,51 @@ html{
 }
 
 /* BARRA DE NAVEGACION */
-.barra_navegacon_principal {
+.barra_navegacion_principal {
     background-color: var(--color-azul-fuerte); 
-    display: flex;
-    justify-content: space-around;
     padding: 10px;
 }
 
-.barra_navegacon_principal ul {
+.barra_navegacion_principal ul {
     margin: 0; 
     padding: 0; 
     list-style-type: none; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.barra_navegacon_principal ul li {
+.barra_navegacion_principal ul li {
     display: inline-block; 
 }
 
-.barra_navegacon_principal ul li a {
+.barra_navegacion_principal ul li a {
     color: white; 
     padding: 10px 20px; 
     text-decoration: none; 
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s; 
 }
 
-.barra_navegacon_principal ul li a:hover {
+.barra_navegacion_principal ul li a:hover {
     background-color: #555;
 }
 
 
 /* INICIO DE SECCION */
 
+.img_perfil_inicio{
+   width: 5rem;
+   height: 5rem;
+}
+
 .contendor_inicio_seccion{
-    width: 15rem;
-    height: 15rem;
+    width: 17rem;
+    height: 20rem;
     padding: 1rem;
     margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form_inicio_session{
@@ -91,14 +99,84 @@ html{
     border-radius: 0.6rem;
 }
 
-.form_inicio_session label, input{
+.inputs_inicio{
     margin: 0.5rem;
+    width: 14rem;
+    height: 2rem;
+    border: 0.1rem solid var(--color-azul-fuerte);
+    border-radius: 0.4rem;
+    padding: 0.5rem;
 }
+
+#passwordIngresada{
+    padding-right: 30px; /* Espacio para el icono de candado */
+    background-image: url(/img/candado.png); /* Ruta de tu icono de candado */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px 20px;
+}
+
+#ingresar_seccion{
+    width: 8rem;
+    height: 1.8rem;
+}
+
+/* CONTACTO */ 
+
+.main_contacto{
+    background-color: var(--color-azul-celeste);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor_form_contacto{
+    background-color: #DAFFFB;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.1rem solid var(--color-azul-fuerte);
+    border-radius: 0.4rem;
+}
+.img_mail{
+    width: 10rem;
+}
+
+.form_contacto{
+    background-color: var(--color-celeste-claro);
+    width: 40rem;
+    height: 20rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: 0.1rem solid var(--color-azul-fuerte);
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction:column;
+}
+
+.form_contacto input{
+    width: 10rem;
+}
+
+/* TAZA FIJA */
+
+
+
 
 
 /* Registro  */
 
-.contenedor_from_registro{
+.main_registro{
+    background-color: var(--color-azul-fuerte);
+    height: 100vh;
+}
+
+.contenedor_formulario_registro{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -106,10 +184,13 @@ html{
     justify-content: center;
 }
 
+.img_registro{
+    width: 8rem;
+}
+
 .titulo_formulario_registro{ /* Titulo de registro */ 
     width: 30rem;
     padding: 1rem;
-    margin: 1rem;
     text-align: center;
     font-size: 2rem;
     color: var(--color-celeste-claro);
@@ -120,14 +201,10 @@ html{
 }
 
 
-/* Estilo para el formulario de registro */
 
-.main_registro{
-    background-color: var(--color-azul-fuerte);
-}
 
 #form_registro {
-    width: 400px;; 
+    width: 35rem;
     margin: 2rem auto; 
     padding: 2rem;
     border-radius: 1rem;
@@ -180,11 +257,12 @@ footer{
 
 }
 
-footer h3{
+.texto_footer{
     color: white;
     text-align: center;
     border: 0.1rem solid var(--color-azul-fuerte);
     border-radius: 0.5rem;
+    font-size: 1.5rem;
 }
 
 /* INICAR SECCION */
